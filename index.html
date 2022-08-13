@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Comidas rapidas</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<link rel="stylesheet"href="estyle.css">
+
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+
+<style>
+body, html {height: 100%}
+body,h1,h2,h3,h4,h5,h6 {font-family: "Amatic SC", sans-serif}
+.menu {display: none}
+.bgimg {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("img/prin.png");
+  min-height: 90%;
+}
+</style>
+</head>
+
+<body>
+<!-- Navbar (sit on top) -->
+<div class="w3-top w3-hide-small">
+  <div class="w3-bar w3-xlarge w3-black w3-opacity w3-hover-opacity-off" id="myNavbar">
+    <a href="#" class="w3-bar-item w3-button">INICIO</a>
+    <a href="#menu" class="w3-bar-item w3-button">MENU</a>
+    <a href="#about" class="w3-bar-item w3-button">NOSOTROS</a>
+    <a href="#myMap" class="w3-bar-item w3-button">CONTACTO</a>
+    <a href="#myMap" class="w3-bar-item w3-button">ESTE ES UN DEMO</a>
+  </div>
+</div>
+  
+<!-- Header with image -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-bottomleft w3-padding">
+    <span class="w3-tag w3-xlarge">ABIERTO 3:00pm a 12pm</span>
+  </div>
+  <div class="w3-display-middle w3-center">
+    <span class="w3-text-white w3-hide-small" style="font-size:100px"><br>DISFRUTA!!</span>
+    <span class="w3-text-white w3-hide-large w3-hide-medium" style="font-size:60px"><b>thin<br>DISFRUTA!!</b></span>
+    <p><a href="#menu" class="w3-button w3-xxlarge w3-black">MENU</a></p>
+  </div>
+</header>
+
+<!-- Menu Container -->
+<body background="img/fondo3.png" id="myPage">
+<div class="w3-container" style="position:relative">
+<a href="https://wa.me/573167017590/?text=tu%20texto%20personalizado" target="_blank"onclick="w3_open()" class="w3-button w3-xlarge w3-circle w3-teal"
+style="position:absolute;top:-28px;right:24px"><i class="fa fa-whatsapp"></i></a>
+</div>
+
+<div class="w3-container w3-black w3-padding-64 w3-xxlarge" id="menu">
+  <div class="w3-content">
+  
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">MENU</h1>
+    <div class="w3-row w3-center w3-border w3-border-dark-grey">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Pizza');" id="myLink">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Hamburguesas</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Pasta');">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Sandwichs</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Starter');">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Perros</div>
+      </a>
+    </div>
+
+    <div id="Pizza" class="w3-container menu w3-padding-32 w3-white">
+      <h1><b>maxi-hamburguesa</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$24.500</span></h1>
+      <p class="w3-text-grey">Doble Jamon,Doble queso,Carne,tomate,cebolla,lechuga,salsas</p>
+      <hr>
+   
+      <h1><b>Hamburguesa sencilla</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$12.500</span></h1>
+      <p class="w3-text-grey">Jamon, Queso,carne,tomate,cebolla,lechuga,salsas</p>
+      <hr>
+      
+      <h1><b>Hamburgui</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$19.500</span></h1>
+      <p class="w3-text-grey">Jamon, Queso,carne,tomate,cebolla,lechuga,salsas</p>
+      <hr>
+
+      <h1><b>Hamburger</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$16.500</span></h1>
+      <p class="w3-text-grey">Jamon, Queso,carne,tomate,cebolla,lechuga,salsas</p>
+      <hr>
+
+      <h1><b>Hamburgu</b> <span class="w3-tag w3-red w3-round">Hot!</span><span class="w3-right w3-tag w3-dark-grey w3-round">$12.000</span></h1>
+      <p class="w3-text-grey">Jamon, Queso,carne,tomate,cebolla,lechuga,salsas</p>
+      <hr>
+
+      <h1><b>Hamburgue</b> <span class="w3-tag w3-grey w3-round">New</span><span class="w3-right w3-tag w3-dark-grey w3-round">$12.000</span></h1>
+      <p class="w3-text-grey">Jamon, Queso,carne,tomate,cebolla,lechuga,salsas</p>
+    </div>
+
+    <div id="Pasta" class="w3-container menu w3-padding-32 w3-white">
+      <h1><b>Maxi</b> <span class="w3-tag w3-grey w3-round">sandwichs</span> <span class="w3-right w3-tag w3-dark-grey w3-round">$12.000</span></h1>
+      <p class="w3-text-grey">Jamon, Queso,pollo,tomate,cebolla,lechuga,salsas</p>
+      <hr>
+   
+      <h1><b>Deli sandwichs</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$12.000</span></h1>
+      <p class="w3-text-grey">Jamon, Queso,tomate,cebolla,lechuga,salsas</p>
+      <hr>
+      
+      <h1><b>Sandwichs Classico</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$12.000</span></h1>
+      <p class="w3-text-grey">Jamon, Queso,lechuga,salsas</p>
+      <hr>
+
+      <h1><b>Mega sandwichs</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$12.000</span></h1>
+      <p class="w3-text-grey">Jamon, Queso,pollo,tomate,cebolla,lechuga,salsas</p>
+    </div>
+
+
+    <div id="Starter" class="w3-container menu w3-padding-32 w3-white">
+      <h1><b>Mega</b> <span class="w3-tag w3-grey w3-round">perro</span><span class="w3-right w3-tag w3-dark-grey w3-round">$19.000</span></h1>
+      <p class="w3-text-grey">Jamon, Queso,mega salchicha,cebolla,lechuga,salsas al gusto,piña</p>
+      <hr>
+   
+      <h1><b>Maxi perro</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$12.000</span></h1>
+      <p class="w3-text-grey">Jamon, Queso,maxi salchicha,cebolla,salsas,piña</p>
+      <hr>
+      
+      <h1><b>Deli perro</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$12.000</span></h1>
+      <p class="w3-text-grey">Jamon, Queso,delisalchicha,cebolla,salsas,piña</p>
+      <hr>
+      
+      <h1><b>Especial con papas</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$12.000</span></h1>
+      <p class="w3-text-grey">Jamon, Queso,salchicha especial,cebolla,salsas al gusto,piña</p>
+    </div><br>
+
+  </div>
+</div>
+
+<!-- About Container -->
+<div class="w3-container w3-padding-64 w3-red w3-orange w3-xlarge" id="about">
+  <div class="w3-content">
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">NOSOTROS</h1>
+    <p>Somos un reconocido restaurante especializado en comidas rapidas ubicado en Bucaramanga con el proposito de brindar excelentes productos y ofrecer una gran experiencia con un excelente servicio al cliente ofreciendo a nuestros clientes un menú completo, con platos exquisitos en un lugar agradable.</p>
+    <p><strong>Mmmm</strong>Deleitate!!!<img src="img/11.png" style="width:150px" class="w3-circle w3-right" alt="Chef"></p>
+    <p>Con nuestros productos.</p>
+    <img src="img/sandwichs9.png" style="width:100%" class="w3-margin-top w3-margin-bottom" alt="Restaurant">
+    <h1><b>Horarios de atension</b></h1>
+    
+    <div class="w3-row">
+      <div class="w3-col s6">
+        <p>Lunes a viernes</p>
+        <p>3:00pm - 12:00pm</p>
+        <p>Sabados, Domingos y Festivos</p>
+        <p>3:00pm - 2:00pm</p>
+      </div>
+      
+    </div>
+    
+  </div>
+</div>
+
+<!-- Image of location/map -->
+<img src="img/1.png" class="w3-image w3-yellow" style="width:100%;" id="myMap">
+
+<!-- Contact -->
+<div class="w3-container w3-padding-64 w3-amber w3-grayscale-min w3-xlarge">
+  <div class="w3-content">
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">Contacto</h1>
+  
+    <p><span class="w3-tag">Escríbenos a nuestro WhatsApp Cel! 31X.XXX.XXX</span>
+    <P>DIRECCIÓN</P>
+    <P>Calle 6X # XX - XX </P>
+    <P>Teléfonos: 6X32XXX - 6X3XXX1</P>
+    </p>
+    <p class="w3-xxlarge"><strong>Haz</strong>tu pedido ahora!!!</p>
+   
+  </div>
+</div>
+
+<!-- Footer -->
+
+<footer class="w3-container w3-padding-32 w3-theme-d1 w3-center" style="width:100%">
+  <h4>Nuestras redes sociales</h4>
+  <a class="w3-button w3-large w3-teal" href="javascript:void(0)" title="Facebook"><i class="fa fa-facebook"></i></a>
+  <a class="w3-button w3-large w3-teal" href="javascript:void(0)" title="Twitter"><i class="fa fa-twitter"></i></a>
+  <a class="w3-button w3-large w3-teal" href="javascript:void(0)" title="Google +"><i class="fa fa-instagram"></i></a>
+  <p> Todos los derechos reservados - 2022 <a href="" target="_blank"></a></p><p>© Copyright</p>
+  
+
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+     tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-red";
+}
+document.getElementById("myLink").click();
+</script>
+
+</body>
+</html>
